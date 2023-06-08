@@ -17,34 +17,8 @@ namespace Arong_Core
 	public class Arong_Debug
 	{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 	/// <summary>
 	/// NX菜单创建类
 	/// </summary>
