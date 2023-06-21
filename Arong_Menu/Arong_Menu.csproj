@@ -96,6 +96,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ico_Quickly_Transparent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ico_Quickly_Transparent.Designer.cs">
+      <DependentUpon>Ico_Quickly_Transparent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tools\Main_Menu_Split.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     <Compile Include="Use_Form\Use_set.Designer.cs">
       <DependentUpon>Use_set.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ico_Quickly_Transparent.resx">
+      <DependentUpon>Ico_Quickly_Transparent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tools\AutoDebuging.resx">
       <DependentUpon>AutoDebuging.cs</DependentUpon>
     </EmbeddedResource>

@@ -74,7 +74,7 @@ namespace Arong_Menu
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		public void Button_C(object sender, EventArgs e)
+		private void Button_C(object sender, EventArgs e)
 		{
 			Button bn = (Button)sender;
 			System.Diagnostics.Process.Start(bn.Tag.ToString());

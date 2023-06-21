@@ -21,23 +21,26 @@ namespace Arong_Menu
 			this.BackColor = Properties.Settings.Default.Tools_color;
 		}
 
-		//批量名称替换
+		/// <summary>
+		/// 批量名称替换
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void button1_Click(object sender, EventArgs e)
 		{
 			Bat.Form1 form1 = new Bat.Form1();
 			form1.Show();
 		}
 
-		//复制文件并保留文件夹结构
+		/// <summary>
+		/// 复制文件并保留文件夹结构
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void button2_Click(object sender, EventArgs e)
 		{
 			Custom_updata custom_Updata = new Custom_updata();
 			custom_Updata.Show();
-		}
-
-		private void Improving_Tool_Load(object sender, EventArgs e)
-		{
-
 		}
 
 		/// <summary>
@@ -73,10 +76,26 @@ namespace Arong_Menu
 			autoDebuging.Show();
 		}
 
+		/// <summary>
+		/// 主菜单拆分
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void button6_Click(object sender, EventArgs e)
 		{
 			Main_Menu_Split main_Menu_Split = new Main_Menu_Split();
 			main_Menu_Split.Show();
+		}
+
+		/// <summary>
+		/// 图标一键透明
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void button7_Click(object sender, EventArgs e)
+		{
+			Ico_Quickly_Transparent ico_Quickly_Transparent = new Ico_Quickly_Transparent();
+			ico_Quickly_Transparent.Show();
 		}
 	}
 }

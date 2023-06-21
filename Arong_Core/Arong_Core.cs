@@ -95,7 +95,9 @@ namespace Arong_Core
 			string[] name = Directory.GetFiles(path, "*");
 			for (int i = 0; i < name.Length; i++)
 			{
-				name[i] = Path.GetFileName(name[i]);
+				//带扩展名有问题，这里需要改成不带扩展名
+				name[i] = Path.GetFileNameWithoutExtension(name[i]);
+				name[i] = name[i].Replace(".lc","");
 			}
 			return name;
 		}

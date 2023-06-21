@@ -137,12 +137,6 @@ namespace Arong_Menu
 			//}
 		}
 
-		//块
-		private void groupBox1_Enter(object sender, EventArgs e)
-		{
-
-		}
-
 		//打开许可文件夹
 		private void button2_Click_1(object sender, EventArgs e)
 		{
