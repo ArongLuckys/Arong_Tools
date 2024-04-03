@@ -249,7 +249,11 @@ namespace Arong_Core
 	/// </summary>
 	public class Arong_Re
 	{
-		//文件重命名接口，path为用户选择的set文件夹路径，names为用户变更的许可名称
+		/// <summary>
+		/// 许可更换，path为用户选择的set文件夹路径，names为用户变更的许可名称
+		/// </summary>
+		/// <param name="path"></param>
+		/// <param name="names"></param>
 		public static void Re(string path, string names)
 		{
 			//将set内的许可全部清空
@@ -259,9 +263,9 @@ namespace Arong_Core
 				File.Delete(fileList[i]);
 			}
 			//Arong工具箱内的许可完整路径
-			string path1 = Arong_Path.Lic + "\\" + names;
+			string path1 = Arong_Path.Lic + "\\" + names + ".viclic";
 			//用户指定的路径
-			string path2 = path + "\\set\\" + names;
+			string path2 = path + "\\set\\" + names + ".viclic";
 			//拷贝文件操作
 			File.Copy(path1, path2);
 		}
