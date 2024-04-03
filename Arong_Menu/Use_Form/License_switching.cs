@@ -26,7 +26,11 @@ namespace Arong_Menu
 		// 创建FlowLayoutPanel控件
 		FlowLayoutPanel flowLayoutPanel1 = new FlowLayoutPanel();
 
-		//主窗口
+		/// <summary>
+		/// 主窗口
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void License_switching_Load(object sender, EventArgs e)
 		{
 			//显示当前使用的许可名称
@@ -39,7 +43,7 @@ namespace Arong_Menu
 			listBox1.Items.Clear();
 			for (int i = 0; i < f.Length; i++)
 			{
-				listBox1.Items.Add(f[i]);
+				listBox1.Items.Add(f[i].ToString().Replace(".viclic", ""));
 			}
 
 			//获取当前设置的nx版本
@@ -92,7 +96,11 @@ namespace Arong_Menu
 			System.Diagnostics.Process.Start(bn.Tag.ToString());
 		}
 
-		//结束NX进程
+		/// <summary>
+		/// 结束NX进程
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void button3_Click(object sender, EventArgs e)
 		{
 			System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("ugraf");
@@ -102,7 +110,11 @@ namespace Arong_Menu
 			}
 		}
 
-		//列表视图
+		/// <summary>
+		/// 列表视图
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			if (Properties.Settings.Default.files_path == "C:\\")

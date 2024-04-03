@@ -27,15 +27,6 @@ namespace Arong_Menu
 		//启动默认为0
 		public int panel_ui = 0;
 
-		public void App_Info(int i)
-		{
-			switch (i)
-			{
-				case 0:notifyIcon1.ShowBalloonTip(30, "消息", "许可切换了", ToolTipIcon.Info);break;
-				default:break;
-			}
-		}
-
 		public Form_main()
 		{
 			InitializeComponent();
@@ -292,15 +283,7 @@ namespace Arong_Menu
 		//窗体关闭后，
 		private void Form_main_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			//记录当前位置
-			Point re = new Point(-8, -8);
-			//如果是最大化关闭的，则不记录位置
-			if (this.Location != re)
-			{
-				Properties.Settings.Default.form = (Size)this.Location;
-				Properties.Settings.Default.Save();
-			}
-			Arong_Log.Oper_Log("终止服务，退出进程++++++++++++++++++++++++++++++++++++++");
+
 		}
 
 		//提效工具进入
@@ -381,6 +364,22 @@ namespace Arong_Menu
 			{
 				Close();
 			}
+		}
+
+		/// <summary>
+		/// 主程序退出前
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void Form_main_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			//如果是最大化关闭的，则不记录位置
+			if ((this.Location.X > 0) && (this.Location.Y > 0) && (this.Location.X < 1920) && (this.Location.Y < 1080))
+			{
+				Properties.Settings.Default.form = (Size)this.Location;
+				Properties.Settings.Default.Save();
+			}
+			Arong_Log.Oper_Log("终止服务，退出进程++++++++++++++++++++++++++++++++++++++");
 		}
 	}
 }

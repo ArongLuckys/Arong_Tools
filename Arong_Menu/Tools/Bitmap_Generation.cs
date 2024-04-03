@@ -7,19 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Arong_Core;
+using CCWin;
 
 namespace Arong_Menu
 {
-    public partial class Visual_Editor : UserControl
-    {
-        public Visual_Editor()
-        {
-            InitializeComponent();
-        }
+	public partial class Bitmap_Generation : Skin_DevExpress
+	{
+		public Bitmap_Generation()
+		{
+			InitializeComponent();
+		}
 
-        private void Visual_Editor_Load(object sender, EventArgs e)
-        {
+		private void Bitmap_Generation_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }

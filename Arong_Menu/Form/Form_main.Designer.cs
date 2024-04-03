@@ -289,7 +289,7 @@
 			this.ShadowWidth = 15;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "提效工具箱_V3.1";
-			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_main_FormClosed);
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_main_FormClosing);
 			this.Load += new System.EventHandler(this.Form_main_Load);
 			this.SizeChanged += new System.EventHandler(this.Form_main_SizeChanged);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_main_KeyDown);

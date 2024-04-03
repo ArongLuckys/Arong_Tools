@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Arong_Core;
 using System.IO;
 using CCWin;
+using System.Xml.Linq;
 
 namespace Arong_Menu
 {
@@ -20,6 +21,11 @@ namespace Arong_Menu
 			InitializeComponent();
 			this.BackColor = Properties.Settings.Default.Tools_color;
 			Arong_Log.Oper_Log("Time_Set窗体初始化完成");
+
+			if (radioButton1.Checked == true)
+			{
+				dateTimePicker1.Enabled = false;
+			}
 		}
 
 		/// <summary>
@@ -29,15 +35,28 @@ namespace Arong_Menu
 		/// <param name="e"></param>
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string path = textBox1.Text;
-			string[] name = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
-			for (int i = 0; i < name.Length; i++)
+			if (textBox1.Text.Length != 0)
 			{
-				File.SetAttributes(name[i], System.IO.FileAttributes.Normal); //将文件设为无属性，防止报错
-				File.SetLastWriteTime(name[i], DateTime.Now);
-			}
+				string[] name = Directory.GetFiles(textBox1.Text, "*", SearchOption.AllDirectories);
+				for (int i = 0; i < name.Length; i++)
+				{
+					File.SetAttributes(name[i], FileAttributes.Normal); //将文件设为无属性，防止报错
+					if (radioButton1.Checked == true)
+					{
+						File.SetLastWriteTime(name[i], DateTime.Now);
+					}
+					else
+					{
+						File.SetLastWriteTime(name[i], dateTimePicker1.Value);
+					}
+				}
 
-			MessageBox.Show("完成，共计" + name.Length + "个文件变更完成");
+				MessageBox.Show("完成，共计" + name.Length + "个文件变更完成");
+			}
+			else
+			{
+				MessageBox.Show("没有指定路径");
+			}
 		}
 
 		/// <summary>
@@ -50,6 +69,32 @@ namespace Arong_Menu
 			if (e.KeyCode == Keys.Escape)
 			{
 				Close();
+			}
+		}
+
+		/// <summary>
+		/// 当前时间
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void radioButton1_CheckedChanged(object sender, EventArgs e)
+		{
+			if (radioButton1.Checked == true)
+			{
+				dateTimePicker1.Enabled = false;
+			}
+		}
+
+		/// <summary>
+		/// 自定义时间
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void radioButton2_CheckedChanged(object sender, EventArgs e)
+		{
+			if (radioButton2.Checked == true)
+			{
+				dateTimePicker1.Enabled = true;
 			}
 		}
 	}
