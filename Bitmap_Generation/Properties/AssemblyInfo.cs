@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("extract_text")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("图标生成")]
+[assembly: AssemblyDescription("快速将图标生成")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("extract_text")]
+[assembly: AssemblyProduct("快速将图标生成")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("dbcb21a4-fed8-4afc-b9ce-15aea4e6476d")]
+[assembly: Guid("3ec38f49-d262-4980-bca5-9afd34f5e592")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

@@ -1,0 +1,1317 @@
+VERSION 120
+EDIT UG_GATEWAY_MAIN_MENUBAR
+
+BEFORE UG_HELP
+CASCADE_BUTTON     IUS_TOOLS_KK
+LABEL 智一注塑模系统
+END_OF_BEFORE
+
+MENU      IUS_TOOLS_KK
+
+	CASCADE_BUTTON    Coms
+	LABEL	命令合集
+
+	SEPARATOR
+
+	CASCADE_BUTTON    DFM
+	LABEL	分模工具
+	!LABEL	DFM/分模
+
+	CASCADE_BUTTON  Universality_Tools
+	LABEL	通用工具
+
+	CASCADE_BUTTON	Structure
+	LABEL	结构设计
+
+	CASCADE_BUTTON    Mold_features_Tools
+	LABEL	特征设计
+
+	CASCADE_BUTTON  Auto_Assembly
+	LABEL	装配工具
+
+	CASCADE_BUTTON  Automatic_drawing
+	LABEL	出图工具
+
+	SEPARATOR
+
+	BUTTON          About_us
+	LABEL              关于智一
+	BITMAP          ${QT_APPLICATION_DIR}\application\05_1.About_Us\bmp\About.bmp
+	ACTIONS	       ${QT_APPLICATION_DIR}\application\05_1.About_Us\About_Us.dll
+
+END_OF_MENU
+
+!!!!!!!!!!!!!!!二级目录---快捷命令合集M!!!!!!!!!!!!!!!
+
+ MENU      Coms
+
+	BUTTON Parting_Design_Collection
+	!LABEL	DFM/分模命令集
+	LABEL	分模工具命令集
+	BITMAP  die_face.bmp
+	ACCELERATOR  Alt+1
+	ACTIONS ${QT_APPLICATION_DIR}\startup\Parting_Design_Collection.utd
+
+	BUTTON Universality_Collection
+	LABEL	通用工具命令集
+	BITMAP	${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Bmp\color_tools.bmp
+	ACCELERATOR  Alt+2
+	ACTIONS ${QT_APPLICATION_DIR}\startup\Universality_Collection.utd
+
+	BUTTON Structure_Collection
+	LABEL	结构设计命令集
+	BITMAP  	${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\BMP\SoliderDataBase.bmp
+	ACCELERATOR  Alt+3
+	ACTIONS ${QT_APPLICATION_DIR}\startup\Structure_Collection.utd
+
+	BUTTON drawing_command_set
+	LABEL	出图工具命令集
+	BITMAP 	${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\bmp\picture_frame.bmp
+	ACCELERATOR  Alt+4
+	ACTIONS ${QT_APPLICATION_DIR}\startup\Drawing_Design_Collection.utd
+
+END_OF_MENU
+
+!!!!!!!!!!!!!!!二级目录---DFM/分模M!!!!!!!!!!!!!!!
+
+ MENU      DFM
+
+!BUTTON      DFM_guide_xls
+!LABEL          DFM设计向导
+!BITMAP	   die_face.bmp
+!ACTIONS     ${QT_APPLICATION_DIR}\APPLICATION\public\rightNavigator.dll 
+
+!BUTTON          DFMCatalogue
+!LABEL               目录
+!MESSAGE         目录
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\Content.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\DFMCatalogue.dll
+
+!BUTTON          product_Information
+!LABEL               产品信息
+!MESSAGE         产品信息
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\product_information.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\product_Information.dll
+
+!BUTTON          mold_Information
+!LABEL               模具信息
+!MESSAGE         模具信息
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\tooling_information.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\mold_Information.dll
+
+!BUTTON          tooling_layout
+!LABEL               布局分析
+!MESSAGE         布局分析
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\tooling_layout.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\locational_analysis.dll
+
+!BUTTON          thickness
+!LABEL               壁厚分析
+!MESSAGE         壁厚分析
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\thickness.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\thickness_analysis.dll
+
+!BUTTON          draft_analysis
+!LABEL               斜率分析
+!MESSAGE         斜率分析
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\draft_analysis.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\slope_analysis.dll
+
+!BUTTON          gate_type
+!LABEL               流道与浇口
+!MESSAGE         流道与浇口
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\gate_type.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\runner_gate.dll
+
+!BUTTON          Part_Surface_line
+!LABEL               前后模分型线
+!MESSAGE         前后模分型线
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\parting_line.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\Part_Surface_line.dll
+
+!BUTTON          Slider_Parting_line
+!LABEL               滑块分型线
+!MESSAGE         滑块分型线
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\slide_line.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\Slider_Parting_line.dll
+
+!BUTTON          Lifter_Parting_line
+!LABEL               斜顶分型线
+!MESSAGE         斜顶分型线
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\lifter_line.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\Lifter_Parting_line.dll
+
+!BUTTON          Insert_Parting_line
+!LABEL               镶件分型线
+!MESSAGE         镶件分型线
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\insert_line.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\Insert_Parting_line.dll
+
+!BUTTON         tooling_ej
+!LABEL               顶出布局
+!MESSAGE         顶出布局
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\tooling_ej.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\eject.dll
+
+!BUTTON         cooling
+!LABEL               运水图
+!MESSAGE         运水图
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\cooling.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\carrying_water_picture.dll
+
+!BUTTON         carve_characters
+!LABEL               刻字分析
+!MESSAGE         刻字分析
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\marking.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\carve_characters.dll
+
+!BUTTON         issues
+!LABEL               产品问题
+!MESSAGE         产品问题
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\issues.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\product_problem\product_problem.dll
+
+!BUTTON          exhaust_analysis
+!LABEL               排气分析
+!MESSAGE         排气分析
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\vent.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\exhaust_analysis.dll
+
+!BUTTON         exportppt
+!LABEL               DFM合并
+!MESSAGE         DFM合并
+!BITMAP           ${QT_APPLICATION_DIR}\application\01_3.DFM\bmp\export_DFM.bmp
+!ACTIONS	        ${QT_APPLICATION_DIR}\application\01_3.DFM\exportppt.dll
+
+!	SEPARATOR
+
+BUTTON      Splitting_mold_xls
+LABEL          自动分模设计向导
+BITMAP	   die_face.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\APPLICATION\public\rightNavigator.dll 
+
+BUTTON           item_setting
+LABEL               项目设置
+MESSAGE         项目设置
+BITMAP           ${QT_APPLICATION_DIR}\application\01_1.project_information\setting1.bmp
+ACTIONS	        ${QT_APPLICATION_DIR}\application\01_1.project_information\item_setting.dll
+
+BUTTON      ProductsToStraighten
+LABEL          产品摆正
+MESSAGE    产品摆正
+BITMAP      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\ProductsToStraighten\bitmaps2.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\ProductsToStraighten\ProductsToStraighten.dll
+
+BUTTON       zoom_products_3
+LABEL           产品放缩水
+MESSAGE     产品放缩水
+BITMAP       ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\shrink1.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\zoom_products_3.dll
+
+BUTTON       test_PL_1017
+LABEL          中心对齐
+MESSAGE    中心对齐
+BITMAP      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\Center1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\test_PL_1017.dll
+
+BUTTON       parting_preference
+LABEL           分模初始化
+MESSAGE     分模初始化
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\parting_preference\split\parting_preference.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\parting_preference\parting_preference.dll
+
+BUTTON       regioncheck
+LABEL           区域分析检查
+MESSAGE     区域分析检查
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\regioncheck\regioncheck.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\regioncheck\regioncheck.dll
+
+BUTTON       PatchSurface
+LABEL           片体补孔
+MESSAGE     片体补孔
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\PatchSurface\PatchSurface.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\PatchSurface\PatchSurface.dll
+
+BUTTON       EditPartingLine
+LABEL           编辑分型线 
+MESSAGE     编辑分型线 
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\EditPartingLine\EditPartingLine.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\EditPartingLine\EditPartingLine.dll
+
+BUTTON       CreatePLFace
+LABEL           创建分型面 
+MESSAGE     创建分型面 
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\CreatePLFace.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\Create_PL_Surface.dll
+
+BUTTON       editPLsurface
+LABEL           编辑分型面和补片
+MESSAGE     编辑分型面和补片
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\edit_PL_surface.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\editPLsurface.dll
+
+BUTTON       PatchAnalysis
+LABEL           补片分析检查
+MESSAGE     补片分析检查
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\PatchAnalysis.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\PatchAnalysis.dll
+
+BUTTON       regionExtract
+LABEL           析出区域
+MESSAGE     析出区域
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\regionExtract.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\regionExtract.dll
+
+BUTTON       mold_design
+LABEL           模仁设计
+MESSAGE     模仁设计
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\mold_design.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\mold_design.dll
+
+BUTTON       CreateCavityCore
+LABEL           创建型腔型芯
+MESSAGE     创建型腔型芯
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\CreateCavityCore.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\CreateCavityCore.dll
+
+BUTTON      Rapid_Ranking1
+LABEL           快速排位
+MESSAGE      快速排位
+BITMAP      ${QT_APPLICATION_DIR}\application\02_2.intelligent_Ranking\BMP\Rapid1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_2.intelligent_Ranking\Rapid.dll
+
+BUTTON      Multiplepoints
+LABEL           一模多穴
+MESSAGE      一模多穴
+BITMAP      ${QT_APPLICATION_DIR}\application\02_2.intelligent_Ranking\BMP\Multiplepoints.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_2.intelligent_Ranking\Multiplepoints.dll
+
+END_OF_MENU
+
+	!结构设计组
+
+ MENU	Structure
+
+BUTTON     MOLDBASE
+LABEL          模胚
+MESSAGE    模胚
+BITMAP      ${QT_APPLICATION_DIR}\application\02_10.Moldbase\bitmap\MB1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_10.Moldbase\MOLDBASE.dll
+
+BUTTON     mold_frame
+LABEL          模架数据库
+MESSAGE    模架数据库
+BITMAP      ${QT_APPLICATION_DIR}\application\02_28.mold_frame\bmp\mold_frame.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_28.mold_frame\mold_frame.dll
+
+BUTTON     insulating_plate
+LABEL         智能隔热板
+MESSAGE   智能隔热板
+BITMAP      ${QT_APPLICATION_DIR}\application\02_11.hot_runner\bmp\insulating11.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_11.hot_runner\thermal_baffle.dll
+
+BUTTON     DWH
+LABEL         定位环+唧嘴
+MESSAGE   定位环+唧嘴
+BITMAP      ${QT_APPLICATION_DIR}\application\02_5.Feed_system\bmp\DWH.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_5.Feed_system\DWH.dll
+
+BUTTON     XLG
+LABEL         小拉杆
+MESSAGE   小拉杆
+BITMAP      ${QT_APPLICATION_DIR}\application\02_5.Feed_system\bmp\XLG.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_5.Feed_system\XLG.dll
+
+BUTTON     inset_needl
+LABEL          智能镶针
+MESSAGE    智能镶针
+BITMAP      ${QT_APPLICATION_DIR}\application\02_3.Design_mold\inset1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_3.Design_mold\insetNeedl.dll
+
+BUTTON     intelligent_insert
+LABEL          智能镶件
+MESSAGE   智能镶件
+BITMAP      ${QT_APPLICATION_DIR}\application\02_3.Design_mold\inset2.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_3.Design_mold\intelligntinsert.dll
+
+BUTTON     zhinenghukou_project
+LABEL          智能虎口
+MESSAGE   智能虎口
+BITMAP      ${QT_APPLICATION_DIR}\application\02_4.orientation\bmp\hukou1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_4.orientation\zhinenghukou_project.dll
+
+BUTTON     InterLocking
+LABEL          智能边锁
+MESSAGE    智能边锁
+BITMAP      ${QT_APPLICATION_DIR}\application\02_21.interlocking\InterLocking.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_21.interlocking\InterLocking.dll
+
+BUTTON     MoldPositioning
+LABEL          模具定位
+MESSAGE    模具定位
+BITMAP      ${QT_APPLICATION_DIR}\application\02_21.interlocking\MoldPositioning.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_21.interlocking\MoldPositioning.dll
+
+BUTTON     Screws
+LABEL          智能螺丝
+MESSAGE    智能螺丝
+BITMAP      ${QT_APPLICATION_DIR}\application\02_15.Screw\bmp\Screws55.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_15.Screw\Screws.dll
+
+BUTTON     smart_spring
+LABEL          智能弹簧
+MESSAGE    智能弹簧
+BITMAP      ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\spring1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\smart_spring.dll
+
+BUTTON     sp
+LABEL          智能撑头
+MESSAGE     智能撑头
+BITMAP      ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\BMP\SP1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\SupportPillar.dll
+
+BUTTON    Mojiao
+LABEL          智能模脚
+MESSAGE     智能模脚
+BITMAP      ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\BMP\Mojiao.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\Mojiao.dll
+
+BUTTON     PL_insert
+LABEL          PL正面锁盲镶件
+MESSAGE    PL正面锁盲镶件
+BITMAP      ${QT_APPLICATION_DIR}\application\02_3.Design_mold\SmartT2.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_3.Design_mold\PLproject.dll
+
+BUTTON     Front_Eyebolt
+LABEL          正面吊环
+MESSAGE    正面吊环
+BITMAP      ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\BMP\Front_Eyebolt_1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\Front_Eyebolt.dll
+
+BUTTON        DateCode
+LABEL            日期码
+MESSAGE      日期码    
+BITMAP        ${QT_APPLICATION_DIR}\application\01_2.product_related\bmps\Dphapter33.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\01_2.product_related\UI_DateCode.dll
+
+BUTTON       Environment
+LABEL           环保码
+MESSAGE     环保码    
+BITMAP        ${QT_APPLICATION_DIR}\application\01_2.product_related\bmps\Environmen1.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\01_2.product_related\zzhuanbaoma.dll
+
+	SEPARATOR
+
+BUTTON          Std1
+LABEL              无参标准件
+MESSAGE        无参标准件
+BITMAP          ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\std_library.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\std_library1.dll
+
+BUTTON          SoliderDataBase
+LABEL              标准件库
+MESSAGE        标准件库
+BITMAP          ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\BMP\SoliderDataBase.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\02_17.universality_Accessories\SoliderDataBase.dll
+
+	SEPARATOR
+
+BUTTON     Slider_head
+LABEL         行位头快速设计
+MESSAGE   行位头快速设计
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\Slider11.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\slider_2.dll
+
+BUTTON     Slider_design
+LABEL         常用行位设计
+MESSAGE   常用行位设计
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\BMP\Slider_design.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\CommonRowSpaceDesign.dll
+
+BUTTON     simplify_Slider
+LABEL         简化行位
+MESSAGE   简化行位
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\BMP\simplify_Slider.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\simple_SliderEnd.dll
+
+BUTTON     retraction_Slider
+LABEL         内缩行位
+MESSAGE   内缩行位
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\BMP\retraction_Slider.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\InteriorSlider.dll
+
+BUTTON     CavSlider
+LABEL         前模行位
+MESSAGE   前模行位
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\BMP\CavSlider1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\CavSlider.dll
+	   
+BUTTON     Slider_orientation
+LABEL         行位定位
+MESSAGE   行位定位
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\BMP\Slider_orientatio1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\SliderPosition.dll
+
+BUTTON     oil_groove
+LABEL         油槽工具
+MESSAGE    油槽工具
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\BMP\oil_groove.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\oil_groove.dll
+
+BUTTON     Wearblock
+LABEL          行位耐磨块
+MESSAGE    行位耐磨块
+BITMAP      ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\BMP\Wear block.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_12.Slider_Design\Wearblock.dll
+
+	SEPARATOR
+
+BUTTON     Lifter1
+LABEL         斜顶头快速设计
+MESSAGE    斜顶头快速设计
+BITMAP      ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\bmp\Lifter.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\Lifter.dll
+
+BUTTON     Lifter_pole
+LABEL        斜顶杆+斜顶座
+MESSAGE    斜顶杆+斜顶座
+BITMAP      ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\bmp\Lifter2.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\Lifter1.dll
+
+BUTTON     Lifter_Guide_Block
+LABEL         斜顶导向块
+MESSAGE     斜顶导向块
+BITMAP      ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\bmp\Lifter_Guide_Block.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\Lifter_Guide_Block.dll
+
+
+BUTTON     LifterBase
+LABEL         斜顶座
+MESSAGE   斜顶座
+BITMAP      ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\bmp\LifterBase.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_13.Lifter_Design\LifterBase.dll
+
+	SEPARATOR
+
+BUTTON     Ejection__Design
+LABEL          顶针设计
+MESSAGE   顶针设计
+BITMAP      ${QT_APPLICATION_DIR}\application\02_16.Ejection_Syste\bmp\Ejection1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_16.Ejection_Syste\thimble.dll
+
+BUTTON     Ejection__Trim
+LABEL          修剪顶针
+MESSAGE   修剪顶针
+BITMAP      ${QT_APPLICATION_DIR}\application\02_16.Ejection_Syste\bmp\Ej_Trim.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_16.Ejection_Syste\newThim_vs.dll
+
+BUTTON     SpruePuller
+LABEL          智能水口针
+MESSAGE    智能水口针
+BITMAP      ${QT_APPLICATION_DIR}\application\02_5.Feed_system\BMP\SpruePuller.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_5.Feed_system\SpruePullerV1.dll
+
+BUTTON     PushBlock
+LABEL          推块设计
+MESSAGE     推块设计
+BITMAP      ${QT_APPLICATION_DIR}\application\02_16.Ejection_Syste\bitmap\PushBlock.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_16.Ejection_Syste\PushBlock.dll
+
+ END_OF_MENU 
+
+!!!!!!!!!!!!!!!二级目录---3.通用工具!!!!!!!!!!!!!!!
+
+ MENU	Universality_Tools 
+
+!!!通用工具条-Universality_Tools!!!
+
+BUTTON             Layer
+LABEL                 图层工具
+MESSAGE           图层工具
+BITMAP              ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\Layer1.bmp
+ACTIONS            ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\layerProject.dll
+
+BUTTON          Design_Layer_LAYER-ON
+LABEL              图层全开
+MESSAGE        图层全开.
+BITMAP           ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\LAYER_ALL_ON.bmp
+ACTIONS         ${QT_Application_DIR}\application\02_7.universality_Tools\LAYER_ALL_ON.dll
+
+BUTTON           Design_Layer_LAYER-OFF    
+LABEL               图层全关
+MESSAGE         图层全关.
+BITMAP            ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\LAYER_ALL_OFF.bmp
+ACTIONS          ${QT_Application_DIR}\application\02_7.universality_Tools\LAYER_ALL_OFF.dll
+
+BUTTON             Design_Layer_CLOSE_LAYER_BY_OBJECT
+LABEL                 选择体关图层
+MESSAGE           选择体关图层.
+BITMAP              ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\close_layer_by_object.bmp
+ACTIONS            ${QT_Application_DIR}\application\02_7.universality_Tools\close_layer_by_object.dll
+
+BUTTON              Design_Layer_DELETE_LAYER
+LABEL                  删除无效图层
+MESSAGE            删除无效图层.
+BITMAP               ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\delete_layer.bmp
+ACTIONS             ${QT_Application_DIR}\application\02_7.universality_Tools\delete_empty_layer.dll
+
+	SEPARATOR
+
+BUTTON             color_tools
+LABEL                 颜色工具
+MESSAGE           颜色工具.
+BITMAP             ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Bmp\color_tools.bmp
+ACTIONS           ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\color_tools.dll
+			
+BUTTON     auto_color
+LABEL         自动上色
+MESSAGE    自动上色.
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\auto_color.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\auto_color.dll
+
+BUTTON   Craft_Color_INHERIT_FACES_COLOR
+LABEL       继承面的颜色
+BITMAP   ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\FACEAB.bmp
+ACTIONS  ${QT_Application_DIR}\application\02_7.universality_Tools\FACEAB.dll
+
+	SEPARATOR
+
+BUTTON     SlopeAnalysis
+LABEL         斜率分析
+MESSAGE    斜率分析
+BITMAP      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\SlopeAnalysis.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\SlopeAnalysis.dll
+
+BUTTON     Division
+LABEL         智能分割
+MESSAGE    智能分割
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\FG1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Division.dll
+
+BUTTON      quick_draft-2
+LABEL          快速拔模
+MESSAGE    快速拔模
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\DeleteText-1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\quick_draft-2.dll
+
+BUTTON     Smart_rotating
+LABEL         智能旋转
+MESSAGE    智能
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\Rotating.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Smart_rotating.dll
+
+BUTTON     copy_pp
+LABEL         移动复制
+MESSAGE    移动复制
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\copy_PP.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\copy_pp.dll
+
+BUTTON       Craft_Assist_MULTIPLY_COPIES_CSYS
+LABEL           连续复制
+MESSAGE     连续复制
+BITMAP        ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\ContinuousReplication.bmp
+ACTIONS      ${QT_Application_DIR}\application\02_7.universality_Tools\ContinuousReplication.dll
+
+BUTTON     4_move_rotate_mirror
+LABEL         4角移动-旋转-镜像
+MESSAGE    4角移动-旋转-镜像
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\4_m_ro_mi.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\sijiaoyidong.dll
+
+	SEPARATOR
+
+BUTTON     Create_Box
+LABEL         创建包容块
+MESSAGE    创建包容块
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\Create_block.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Create_block.dll
+
+BUTTON       tools_box
+LABEL           生成毛胚
+MESSAGE     生成毛胚
+BITMAP        ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\bmp\box1.bmp
+ACTIONS      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\subsumeBlock.dll
+
+BUTTON     del_parms
+LABEL         当前显示对象去参
+MESSAGE    当前显示对象去参
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\del_parms.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\del_parms.dll
+
+BUTTON      boole_operation
+LABEL          布尔操作
+MESSAGE    布尔操作
+BITMAP       ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\bmp\boole_operation.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\boole_operation.dll
+
+BUTTON      Intel_Anal
+LABEL          智能分析
+MESSAGE     智能分析
+BITMAP      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\Anal1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\intelligentAnalysis.dll
+
+BUTTON      face_body_round
+LABEL          面体取整
+MESSAGE    面体取整
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\face_body_round.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\face_body_round.dll
+
+BUTTON      mirrorimageFace3
+LABEL          镜像
+MESSAGE    镜像
+BITMAP       ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\bmp\mirrorimageFace3.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\mirrorimageFace.dll
+
+BUTTON     repairFacePlus_vs
+LABEL         检修破面
+MESSAGE    检修破面
+BITMAP      ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\repairFacePlus1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_1.intelligent_parting\repairFacePlus_vs.dll
+
+BUTTON     remove_bad_body
+LABEL         删除无效实体
+MESSAGE    删除无效实体
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\remove_bad_body.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\remove_bad_body.dll
+
+BUTTON     FACE_centerline
+LABEL         中心线
+MESSAGE    中心线
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\FACE_centerline.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\face_centerline.dll
+
+BUTTON       translucency_body
+LABEL          实体透明
+MESSAGE    实体透明
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\translucency_body.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\translucency_body.dll
+
+BUTTON     translucency_face
+LABEL         面透明
+MESSAGE     面透明
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\translucency_face.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\translucency_face.dll
+
+	SEPARATOR
+
+BUTTON      CANCEL_highlight
+LABEL          取消高亮显示
+MESSAGE    取消高亮显示
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\CANCEL_highlight.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\CANCEL_highlight.dll
+
+BUTTON     BLACK_GROUND
+LABEL         黑色背景
+MESSAGE    黑色背景
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\BLACK_GROUND.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\BLACK_GROUND.macro
+
+BUTTON     WHITE_GROUND
+LABEL         白色背景
+MESSAGE    白色背景
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\WHITE_GROUND.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\WHITE_GROUND.macro
+
+BUTTON     DEFAULT_GROUND
+LABEL         NX8.5默认背景色
+MESSAGE    NX8.5默认背景色
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\DEFAULT_BACKGROUD.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\DEFAULT_BACKGROUD.macro
+
+	SEPARATOR
+
+BUTTON     OPEN_FOLDER
+LABEL         打开当前文件所在目录
+MESSAGE    打开当前文件所在目录
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\OPEN_FOLDER.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\OPEN_FOLDER.dll
+
+
+
+BUTTON     ASK_PART_HISTORY
+LABEL         查询当前文件历史记录
+MESSAGE    查询当前文件历史记录
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\ASK_PART_HISTORY.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\ASK_PART_HISTORY.dll
+
+BUTTON      batch_export_STP
+LABEL          批量按图层导STP
+MESSAGE    批量按图层导STP
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\batch_export_STP.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\batch_export_STP.dll
+
+BUTTON       TO_STEP
+LABEL          当前PART转换成STEP214
+MESSAGE    当前PART转换成STEP214
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\TO_STEP.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\TO_STEP.dll
+
+BUTTON      Design_Assist2_importExportXt
+LABEL         带图层属性导X_T工具
+MESSAGE   带图层属性导X_T工具 
+BITMAP      ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\importExportXt.bmp
+ACTIONS    ${QT_Application_DIR}\application\02_7.universality_Tools\importExportXt.DLL
+
+BUTTON      ExportPrt
+LABEL         降版本
+MESSAGE   降版本
+BITMAP      ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\ExportPrt.bmp
+ACTIONS    ${QT_Application_DIR}\application\02_7.universality_Tools\ExportPrt.dll
+
+BUTTON      Import_bad_part
+LABEL          修复并导入损坏图档
+MESSAGE     修复并导入损坏图档
+BITMAP       ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\Import_bad_part.bmp
+ACTIONS     ${QT_Application_DIR}\application\02_7.universality_Tools\Import_bad_part.dll
+
+BUTTON        Clean_junk_files
+LABEL            清理垃圾文件
+MESSAGE      清理垃圾文件
+BITMAP         ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\Clean_junk_files.bmp
+ACTIONS       ${QT_Application_DIR}\application\02_7.universality_Tools\Clean_junk_files.dll
+
+BUTTON        ClearAllByFilter
+LABEL            清理点线面
+MESSAGE      清理点线面
+BITMAP         ${QT_Application_DIR}\application\02_7.universality_Tools\bmp\ClearAllByFilter.bmp
+ACTIONS       ${QT_Application_DIR}\application\02_7.universality_Tools\ClearAllByFilter.dll
+
+END_OF_MENU 
+
+!!!!!!!!!!!!!!!三级目录---4.模具常用特征!!!!!!!!!!!!!!!
+
+ MENU                      Mold_features_Tools
+
+!!!模具常用特征工具条-Mold_features_Tools!!!
+
+BUTTON     datum
+LABEL         智能基准角
+MESSAGE   智能基准角
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\tupian\DatumMark.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\DatumMark.dll
+
+BUTTON     achine_Datum_Face
+LABEL         基准孔
+MESSAGE    基准孔
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Machine_Datum_Face\Machine_Datum_Face.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Machine_Datum_Face\Machine_Datum_Face.dll
+
+BUTTON     openBox
+LABEL        智能开框
+MESSAGE    智能开框
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bitmaps2\KK2.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\openBox.dll
+
+BUTTON     channeling
+LABEL         智能挖槽
+MESSAGE    智能挖槽
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\0111.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\intelligentChamfer\intelligentChamfer.dll
+
+BUTTON     crater
+LABEL         智能火山口
+MESSAGE    智能火山口
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\crater11.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\crater.dll
+
+BUTTON     AviodEmpty
+LABEL         智能避空
+MESSAGE    智能避空
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\BK1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\AviodEmpty.dll
+
+BUTTON     RemoveTransitionFeatures
+LABEL         快速删除R角C角
+MESSAGE    快速删除R角C角
+BITMAP       ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\CUT_R_C.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\RemoveTransitionFeatures.dll
+
+BUTTON     HoleRecognition
+LABEL         快速删除孔
+MESSAGE    快速删除孔
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\DeleteHole.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\HoleRecognition.dll
+
+BUTTON     DeleteText
+LABEL         快速删除字码
+MESSAGE    快速删除字码
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\DeleteText.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\DeleteText.dll
+
+BUTTON     bevel_cuting
+LABEL         斜面切基准位
+MESSAGE    斜面切基准位
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\oblique_plane.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\Personal_Object.dll
+
+BUTTON     PL_clearance
+LABEL         PL面避空
+MESSAGE    PL面避空
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\PL_clearance.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\PL_clearance.dll
+
+	SEPARATOR
+
+BUTTON      move005
+LABEL          移动面
+MESSAGE    移动面
+BITMAP       ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\bmp\move.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\move.dll
+
+BUTTON      offsetPla
+LABEL          偏置面
+MESSAGE    偏置面
+BITMAP       ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\bmp\offsetPla.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\offsetSurface1.dll
+
+BUTTON      replace
+LABEL          替换面
+MESSAGE    替换面
+BITMAP       ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\bmp\replace.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\replace.dll
+
+BUTTON      delFace
+LABEL          删除面
+MESSAGE    删除面   
+BITMAP       ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\bmp\delFace.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\delFace.dll
+
+BUTTON      chamFer2
+LABEL          倒R角C角
+MESSAGE    倒R角C角
+BITMAP       ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\bmp\chamFer.bmp
+ACTIONS     ${QT_APPLICATION_DIR}\application\02_6.universality_analyse\chamFer.dll
+
+	SEPARATOR
+
+BUTTON          Exhaust
+LABEL              智能排气
+MESSAGE        智能排气
+BITMAP          ${QT_APPLICATION_DIR}\application\02_26.Exhaust\bmp\Exhaust1.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\02_26.Exhaust\smart_vent.dll
+
+BUTTON         pin_vent
+LABEL              镶针/顶针排气
+MESSAGE        镶针/顶针排气
+BITMAP          ${QT_APPLICATION_DIR}\application\02_26.Exhaust\bmp\pin_vent.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\02_26.Exhaust\pin_vent.dll
+
+BUTTON          routine_lettering
+LABEL              智能刻字
+MESSAGE        智能刻字
+BITMAP          ${QT_APPLICATION_DIR}\application\02_25.lettering\bmp\lettering1.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\02_25.lettering\WriteText.dll
+
+BUTTON          WaterTransportEngraving
+LABEL              运水刻字
+MESSAGE        运水刻字
+BITMAP          ${QT_APPLICATION_DIR}\application\02_25.lettering\bmp\WaterTransportEngraving.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\02_25.lettering\WaterTransportEngraving.dll
+
+BUTTON          SmartCombineKezi
+LABEL              智能组合刻字
+MESSAGE         智能组合刻字
+BITMAP          ${QT_APPLICATION_DIR}\application\02_25.lettering\bmp\SmartCombineKezi.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\02_25.lettering\SmartCombineKezi.dll
+
+	SEPARATOR
+
+BUTTON     AutoTemplateWaterWay
+LABEL          自动设计运水
+MESSAGE   自动设计运水
+BITMAP      ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\Cool1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\autocool.dll
+
+BUTTON     CreateCool
+LABEL          动态运水
+MESSAGE   动态运水
+BITMAP      ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\bitmaps2\CreateCool.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\3DCOOL.dll
+
+BUTTON     Cool_std
+LABEL          运水配件
+MESSAGE   运水配件
+BITMAP      ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\bitmaps2\Cool_std.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\Cool_std.dll
+
+BUTTON     smart_wells
+LABEL          智能水井
+MESSAGE    智能水井
+BITMAP      ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\bitmaps2\smart.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\smart_wells.dll
+
+BUTTON     GasAssistedInjectionMolding
+LABEL          自动气辅
+MESSAGE   自动气辅
+BITMAP      ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\bitmaps2\Gas.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_14.Cool_Design\GasAssistedInjectionMolding.dll
+
+	SEPARATOR
+
+BUTTON     Gate
+LABEL          智能胶口
+MESSAGE     智能胶口
+BITMAP      ${QT_APPLICATION_DIR}\application\02_5.Feed_system\bmp\Gate1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_5.Feed_system\jiaokou.dll
+
+BUTTON     runner
+LABEL         智能流道
+MESSAGE     智能流道
+BITMAP      ${QT_APPLICATION_DIR}\application\02_5.Feed_system\bmp\runner1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_5.Feed_system\keytime_runner.dll
+
+BUTTON          Discharge
+LABEL              排料/对齐
+MESSAGE        排料/对齐
+BITMAP          ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\bmp\Discharge.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\Discharge.dll
+
+END_OF_MENU
+
+!!!!!!!!!!!!!!!二级目录---13.自动装配!!!!!!!!!!!!!!!
+
+	 MENU    Auto_Assembly
+
+!!!装配工具条-Auto_Assembly!!!
+			
+BUTTON     Auto_Assembly1
+LABEL        自动装配
+MESSAGE  自动装配
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\Auto_Assembly.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\AutoAssembly.dll
+
+BUTTON     batch_rechristen
+LABEL        智能批量重命名
+MESSAGE   智能批量重命名
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\batch_rechristen1.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\RenameBatchModl.dll
+
+BUTTON    Draw_Assist_UPDATE_VERSION
+LABEL          升级组件<在DWG模式下用>
+MESSAGE    升级组件<在DWG模式下用>
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\UPDATE_VERSION.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\UPDATE_VERSION.dll
+
+BUTTON    Draw_Assist_UPDATE_VERSION_MULTIPLE
+LABEL         批量组件升版本(总档)
+MESSAGE    批量组件升版本(总档)
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\UPDATE_VERSION_MULTIPLE.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\UPDATE_VERSION_MULTIPLE.dll
+
+BUTTON     BackTopAssembly
+LABEL         返回总装配
+MESSAGE   返回总装配
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\BackTopAssembly.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\BackTopAssembly.dll
+
+BUTTON     MFC-ComponentRetrieval
+LABEL         部件检索
+MESSAGE    部件检索
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\ComponentRetrieval.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\MFC-ComponentRetrieval.dll
+
+BUTTON     VersionManagement
+LABEL         版本管理
+MESSAGE   版本管理
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\VersionManagement.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\VersionManagement.dll
+
+BUTTON     Reference
+LABEL         设置引用集
+MESSAGE   设置引用集
+BITMAP      ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\bmp\Reference.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_27.Assembly_Manipulation\Reference.dll
+
+BUTTON     OPEN_DWG
+LABEL         获取部件图纸
+MESSAGE    获取部件图纸
+BITMAP      ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\OPEN_DWG.bmp
+ACTIONS    ${QT_APPLICATION_DIR}\application\02_7.universality_Tools\GetDwg.dll
+
+	SEPARATOR
+
+BUTTON          attribute_Tools
+LABEL              属性工具
+MESSAGE       属性工具
+BITMAP          ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\bmp\attribute1.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\AttrTool2.dll
+
+BUTTON         attr_transition
+LABEL             属性转换
+MESSAGE       属性转换
+BITMAP          ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\bmp\attr_transition.bmp
+ACTIONS	      ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\attr_transition.dll
+
+BUTTON		edit_attr_batch
+LABEL		批量编辑属性
+MESSAGE		批量编辑属性
+BITMAP		${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\bmp\edit_attr_batch.bmp
+ACTIONS		${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\edit_attr_batch.dll
+
+BUTTON          hole_attribute
+LABEL              设置孔属性
+MESSAGE        设置孔属性
+BITMAP          ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\bmp\hole_attribute1.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\SetHoleAttr.dll
+
+BUTTON          bom1
+LABEL              智能BOM
+MESSAGE        智能BOM
+BITMAP          ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\bmp\bom11.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_1.Automatic_BOM\SmartBOM.dll
+
+BUTTON		attributeDisplayControl
+LABEL		属性显示控制
+MESSAGE		属性显示控制
+BITMAP		${QT_APPLICATION_DIR}\application\02_7.universality_Tools\bmp\attributeDisplayControl.bmp
+ACTIONS		${QT_APPLICATION_DIR}\application\02_7.universality_Tools\attributeDisplayControl.dll
+
+	SEPARATOR
+
+BUTTON          Static_Check
+LABEL              静态干涉检查
+MESSAGE        静态干涉检查
+BITMAP          ${QT_APPLICATION_DIR}\application\03_1.Check\bmp\checkIntersection.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_1.Check\checkIntersection.dll
+
+BUTTON         MotionCheck
+LABEL              动态干涉检查
+MESSAGE        动态干涉检查
+BITMAP          ${QT_APPLICATION_DIR}\application\03_2.analogue_simulation\bmp\MotionCheck.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_2.analogue_simulation\UG_MainDll.dll
+
+BUTTON         coolCheckVS
+LABEL              运水干涉检查
+MESSAGE        运水干涉检查
+BITMAP          ${QT_APPLICATION_DIR}\application\03_1.Check\bmp\coolCheckVS.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_1.Check\coolCheckVS.dll
+
+BUTTON         checkattr
+LABEL              属性检查
+MESSAGE        属性检查
+BITMAP          ${QT_APPLICATION_DIR}\application\03_1.Check\bmp\checkattr.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_1.Check\checkattr.dll
+
+BUTTON         clk_check
+LABEL              错漏孔检查
+MESSAGE        错漏孔检查
+BITMAP          ${QT_APPLICATION_DIR}\application\03_1.Check\bmp\clk_check.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_1.Check\clk_check_table.dll
+
+BUTTON         input_Angel
+LABEL             倒角检查
+MESSAGE       倒角检查
+BITMAP          ${QT_APPLICATION_DIR}\application\03_1.Check\bmp\input_Angel.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_1.Check\input_Angel.dll
+
+BUTTON         checkengine
+LABEL             智能匹配注塑机检查
+MESSAGE        智能匹配注塑机检查
+BITMAP          ${QT_APPLICATION_DIR}\application\03_1.Check\bmp\checkengine.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_1.Check\checkengine.dll
+
+SEPARATOR
+
+BUTTON         CheckForm
+LABEL             模具评审管理
+MESSAGE       模具评审管理
+BITMAP          ${QT_APPLICATION_DIR}\application\03_1.Check\bmp\CheckForm.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\03_1.Check\CheckForm.dll
+
+END_OF_MENU
+
+!!!!!!!!!!!!!!!二级目录---17.自动出图!!!!!!!!!!!!!!!
+
+MENU    Automatic_drawing
+
+!!!图纸辅助工具条-Automatic_drawing!!!
+
+BUTTON          drawing_prdfterenc
+LABEL              智一制图首选项
+MESSAGE        智一制图首选项
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\drawing_prdfterenc.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\DrawingPreferences.dll
+
+BUTTON        QTAutoProjectionDrawingBTN
+LABEL             自动出图(批量)
+MESSAGE        自动出图(批量)
+BITMAP          ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\bmp\AUTO.bmp
+ACTIONS        ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\QTAutoProjectionDrawings.dll
+
+BUTTON          QTAutoProjectionBTN
+LABEL               自动投影
+MESSAGE        自动投影
+BITMAP          ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\bmp\AUTO_PROJECT.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\QTAutoProjection.dll
+
+	SEPARATOR
+
+BUTTON          Format_painter
+LABEL               智能格式刷
+MESSAGE         智能格式刷
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\Format_painter.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\Format_painter.dll
+
+BUTTON          hole
+LABEL              穿线孔
+MESSAGE        穿线孔
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\hole.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\hole.dll
+
+BUTTON          finish_symbol
+LABEL              智能加工符号
+MESSAGE        智能加工符号
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\finish_symbol.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\MachiningSymbol.dll
+
+	SEPARATOR
+
+BUTTON          batch_labeling
+LABEL              批量标注
+MESSAGE        批量标注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\batch_labeling.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\batch_labeling.dll
+
+BUTTON          ZBBZ
+LABEL              坐标标注
+MESSAGE        坐标标注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\ZBBZ.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\coordinate.dll
+
+BUTTON          outline_annotation
+LABEL              外形标注
+MESSAGE         外形标注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\biaozhu.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\biaozhu.dll
+
+BUTTON         annnotation1
+LABEL             注解标注
+MESSAGE         注解标注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\annnotation1.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\annnotation1.dll
+
+BUTTON         Quick_Dimension
+LABEL            快速引注
+MESSAGE        快速引注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\Quick_Dimension.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\Quick_Dimension.dll
+
+	SEPARATOR
+
+BUTTON         automarking
+LABEL              配公差
+MESSAGE        配公差
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\automarking.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\automarking.dll
+
+BUTTON          tolerancemarkingUndo
+LABEL              尺寸公差
+MESSAGE         尺寸公差
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\tolerancemarkingUndo.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\tolerancemarkingUndo.dll
+
+BUTTON         edit_label
+LABEL              编辑标注
+MESSAGE        编辑标注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\edit_label.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\edit_label.dll
+
+BUTTON         ccdq
+LABEL              尺寸对齐
+MESSAGE        尺寸对齐
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\ccdq.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\SizeAlignment.dll
+
+BUTTON          HoleTable
+LABEL              加工孔表
+MESSAGE         加工孔表
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\HoleTable.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\HoleTable.dll
+
+BUTTON          Center_line
+LABEL              2D中心线
+MESSAGE         2D中心线
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\Center_line.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\Centerline6.dll
+
+BUTTON          GMBZ
+LABEL              改模标注
+MESSAGE         改模标注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\GMBZ.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\GMBZ.dll
+
+BUTTON          xiangmu111
+LABEL              球标标注
+MESSAGE         球标标注
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\xiangmu111.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\BallMarking.dll
+
+BUTTON          test_draw
+LABEL              智能显示线
+MESSAGE         智能显示线
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\test_draw.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\test_draw.dll
+
+	SEPARATOR
+
+BUTTON          picture_frame
+LABEL              智能图框
+MESSAGE        智能图框
+BITMAP          ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\bmp\picture_frame.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\picture_frame.dll
+
+BUTTON          titlebar
+LABEL              标题栏
+MESSAGE        标题栏
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\titlebar.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\titlebar.dll
+
+BUTTON          checkmap
+LABEL              浏览图纸
+MESSAGE        浏览图纸
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\checkmap.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\checkmap.dll
+
+BUTTON         TitleBlcokEditor
+LABEL              图框信息修改
+MESSAGE        图框信息修改
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\TitleBlcokEditor.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\TitleBlcokEditor.dll
+
+BUTTON          ejector_height
+LABEL              顶针高度图
+MESSAGE        顶针高度图
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\ejector_height.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\ejector_height.dll
+
+BUTTON          needlemergedraw
+LABEL              顶针合并出图
+MESSAGE        顶针合并出图
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\needlemergedraw.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\needlemergedraw.dll
+
+BUTTON          zulitu
+LABEL              智能组立图
+MESSAGE        智能组立图
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\zulitu.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\zulitu.dll
+
+BUTTON          mergedrawing
+LABEL              图纸合并转图
+MESSAGE         图纸合并转图
+BITMAP          ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\bmp\Merge_Drawing.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_2.Automatic_drawing\Merge_Drawing.dll
+
+!BUTTON          specificat_inspect
+!LABEL              检测表
+!MESSAGE         检测表
+!BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\specificat_inspect.bmp
+!ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\specificat_inspect.dll
+
+BUTTON          bulk_print
+LABEL              批量打印
+MESSAGE         批量打印
+BITMAP          ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\bmp\MultPrint_1.bmp
+ACTIONS	       ${QT_APPLICATION_DIR}\application\04_3.drawing_Assist\MultPrint.dll
+
+END_OF_MENU

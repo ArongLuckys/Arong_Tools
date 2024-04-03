@@ -14,7 +14,7 @@ namespace extract_text
 			Console.WriteLine("该功能会将men文件内的数据格式拆分，请保证men文件在同级目录内");
 			Console.WriteLine("键入1将直接执行,键入0将删除生成的文件");
 
-			string path = Environment.CurrentDirectory + "\\cad_main_menu.men";
+			string path = Environment.CurrentDirectory + "\\IUS_TOOLS_KK.men";
 			string extract = Environment.CurrentDirectory + "\\extract";
 
 			string off = Console.ReadLine();
@@ -31,7 +31,7 @@ namespace extract_text
 						{
 							if (file[i].Substring(0, 1) == "!")
 							{
-								if (file[i + 1].Substring(0, 2) == "\tB")
+								if (file[i + 1].Substring(0, 2) == "B")
 								{
 									a++;
 									Console.WriteLine(file[i]);

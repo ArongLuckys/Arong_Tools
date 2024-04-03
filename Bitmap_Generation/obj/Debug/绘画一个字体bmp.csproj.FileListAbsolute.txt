@@ -1,0 +1,11 @@
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\bin\Debug\绘画一个字体bmp.exe.config
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\bin\Debug\绘画一个字体bmp.exe
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\bin\Debug\绘画一个字体bmp.pdb
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.csproj.AssemblyReference.cache
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.csproj.SuggestedBindingRedirects.cache
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.Form1.resources
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.Properties.Resources.resources
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.csproj.GenerateResource.cache
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.csproj.CoreCompileInputs.cache
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.exe
+D:\Arong_Code_Project\Arong_2022\Arong_Test5\绘画一个字体bmp\obj\Debug\绘画一个字体bmp.pdb
